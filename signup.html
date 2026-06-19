@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="container">
+
+    <h2>Registration Form</h2>
+
+    <form id="registrationForm" onsubmit="event.preventDefault(); signup();">
+
+        <input type="text" id="name" placeholder="Name" required>
+
+        <input type="email" id="email" placeholder="Email Address" required>
+
+        <input type="text" id="country" placeholder="Country" required>
+
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+
+        <input type="password" id="password" placeholder="Password" required>
+
+        <label class="checkbox">
+            <input type="checkbox" id="showPasswordToggle" onclick="togglePassword()">
+            <span>Show Password</span>
+        </label>
+
+        <button type="submit">CREATE ACCOUNT</button>
+
+    </form>
+
+    <p>
+        Already have an account?
+        <a href="login.html">Sign In</a>
+    </p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

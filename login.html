@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Student Login</h2>
+
+    <input type="email" id="loginEmail" placeholder="Email Address">
+
+    <input type="password" id="loginPassword" placeholder="Password">
+
+    <div class="checkbox">
+        <input type="checkbox"
+        onclick="toggleLoginPassword()">
+        <span>Show Password</span>
+    </div>
+
+    <button onclick="login()">LOGIN</button>
+
+    <p>
+        New User?
+        <a href="signup.html">Register</a>
+    </p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

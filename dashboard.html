@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <h1>Student Dashboard</h1>
+
+    <div class="card">
+
+        <h3>Total Registered Students</h3>
+
+        <h1 id="studentCount">0</h1>
+
+    </div>
+
+    <button onclick="logout()">Logout</button>
+
+</div>
+
+<script>
+
+let students =
+JSON.parse(localStorage.getItem("students")) || [];
+
+document.getElementById("studentCount").innerText =
+students.length;
+
+</script>
+
+</body>
+</html>
